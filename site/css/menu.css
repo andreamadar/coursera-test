@@ -1,0 +1,92 @@
+/*
+	Stylesheet for Coursera practice page, week 3
+*/
+
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+}
+
+/** HEADER **/
+.navbar {
+  background-color: #f6b319;
+  /*border-radius: 0; - in this version of Bootstrap navbar is not rounded? no need to set border-radius
+  border: 0; - seems to be no border either; no need to set border*/
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a { /* remove underline from link */
+  text-decoration: none;
+  color: #000
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-shadow: 1px 1px 1px #222;
+}
+/*** Header ends ***/
+
+/*** Main content ***/
+h2 {
+	margin-top: 10px;
+}
+#main-content section {
+	height: 100%;
+	background-color: #78364e;
+}
+#navbarToggler {
+    font-size: 1.1em;
+    margin: 10px -12px -5px;
+    background: #fcc84e;
+  }
+ #navbarToggler a {
+    padding: 10px;
+ }
+ #navbarToggler a:hover {
+    font-weight: bold;
+    background: #fcd06a;
+ }
+ #main-content {
+	  padding: 0 50px;
+ }
+ #main-content section {
+	 padding: 5px 8px 10px;
+ }
+ .even-section, .large-section {
+  margin: 10px 0 0;
+ }  
+
+/*** Main content ends ***/
+
+/*** Media queries ***/
+/** New guidelines say there is no need to specify breakpoint for extra small devices.
+Esentially, write basic layout for extra small devices then use breakpoints to switch on larger devices **/
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+ .even-section, .large-section {
+  margin: 0;
+ }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .large-section {
+	margin-top: 10px;  
+}
+
+ .even-section {
+  margin: auto;
+ }
+
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
